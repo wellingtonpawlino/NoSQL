@@ -1,8 +1,8 @@
 version: "3.8"
 services:
-  nosql-neo4j:
-    image: nosql-neo4j
-    container_name: nosql-neo4j
+  mongodb:
+    image: mongodb
+    container_name: mongodb
     ports:
       - "27017:27017"
     volumes:

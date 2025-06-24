@@ -1,8 +1,8 @@
 version: "3.8"
 services:
-  nosql-redis:
-    image: nosql-redis
-    container_name: nosql-redis
+  neo4j:
+    image: neo4j
+    container_name: neo4j
     ports:
       - "27017:27017"
     volumes:

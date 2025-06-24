@@ -1,8 +1,8 @@
 version: "3.8"
 services:
-  nosql-mongodb:
-    image: nosql-mongodb
-    container_name: nosql-mongodb
+  redis:
+    image: redis
+    container_name: redis
     ports:
       - "27017:27017"
     volumes:
