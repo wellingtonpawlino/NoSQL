@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  nosql-cassandra:
+    image: nosql-cassandra
+    container_name: nosql-cassandra
+    ports:
+      - "27017:27017"
+    volumes:
+      - data:/data
+volumes:
+  data:

@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  nosql-neo4j:
+    image: nosql-neo4j
+    container_name: nosql-neo4j
+    ports:
+      - "27017:27017"
+    volumes:
+      - data:/data
+volumes:
+  data:

@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  nosql-mongodb:
+    image: nosql-mongodb
+    container_name: nosql-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - data:/data
+volumes:
+  data:
