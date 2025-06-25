@@ -1,13 +1,10 @@
+# Cassandra não possui UI oficial leve via container.
+# Este arquivo pode incluir ferramentas de seed ou administração futura.
 version: "3.8"
 services:
   cassandra:
     image: cassandra:4
-    container_name: cassandra
     ports:
       - "9042:9042"
     volumes:
       - cassandra_data:/var/lib/cassandra
-    restart: always
-
-volumes:
-  cassandra_data:

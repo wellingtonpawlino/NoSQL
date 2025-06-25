@@ -1,16 +1,10 @@
+# Ambiente de desenvolvimento com debug ou seed extra
 version: "3.8"
 services:
   neo4j:
     image: neo4j:5
-    container_name: neo4j
     ports:
       - "7474:7474"
       - "7687:7687"
     environment:
       NEO4J_AUTH: neo4j/test123
-    volumes:
-      - neo4j_data:/data
-    restart: always
-
-volumes:
-  neo4j_data:

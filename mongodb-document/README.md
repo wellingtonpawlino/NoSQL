@@ -4,16 +4,6 @@ Este repositório demonstra o uso de MongoDB - Banco baseado em documentos com D
 
 ## Estrutura
 
-- `docker-compose.yml` para subir o banco com Docker
-- Scripts em Python para inserção e consulta de dados
-- Notebook de exploração
-
-## Como usar
-
-1. Suba o container:
-   ```bash
-   docker-compose up -d
-   ```
-
-2. Execute os scripts ou notebooks.
-
+- `docker-compose.yml` para rodar o banco principal
+- `docker-compose.dev.yml` para ambiente com ferramentas adicionais
+- Scripts Python e notebooks de exploração

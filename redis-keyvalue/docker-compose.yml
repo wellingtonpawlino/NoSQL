@@ -1,11 +1,13 @@
 version: "3.8"
 services:
   redis:
-    image: redis
+    image: redis:7
     container_name: redis
     ports:
-      - "27017:27017"
+      - "6379:6379"
     volumes:
-      - data:/data
+      - redis_data:/data
+    restart: always
+
 volumes:
-  data:
+  redis_data:
