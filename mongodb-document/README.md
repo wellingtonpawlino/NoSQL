@@ -1,19 +1,5 @@
 
 
-# 🗃️ MongoDB - Banco baseado em documentos
-
-Este repositório demonstra o uso de MongoDB — banco de dados orientado a documentos — com Docker, Python e MongoDB Compass, em um ambiente de aprendizado prático e progressivo.
-
-## 🚀 Tecnologias utilizadas
-
-- MongoDB 7 (via Docker)
-- MongoDB Compass (interface gráfica)
-- Python + PyMongo
-- Docker Compose
-- VS Code
-
-## 📦 Estrutura do projeto
-
 
 # 🗃️ MongoDB - Banco baseado em documentos
 
