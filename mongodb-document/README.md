@@ -8,7 +8,7 @@ Este repositório demonstra o uso de MongoDB — banco de dados orientado a docu
 ## 🚀 Tecnologias utilizadas
 
 - MongoDB 7 (via Docker)
-- MongoDB Compass (interface gráfica)
+*MongoDB Compass (interface gráfica)
 - Python + PyMongo
 - Docker Compose
 - VS Code
