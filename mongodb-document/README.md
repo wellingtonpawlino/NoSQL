@@ -38,3 +38,15 @@ Este repositório demonstra o uso de MongoDB — banco de dados orientado a docu
 | **JOINs entre tabelas**              | **Documentos autocontidos (sem JOIN)**   |
 | **Schema rígido**                    | **Schema dinâmico (campos podem variar)**|
 | **Linguagem SQL**                    | **Sintaxe JSON-like**                    |
+
+
+## 📦 Comandos MongoDB Essenciais
+
+| SQL (relacional)            | MongoDB (documentos)                           |
+|-----------------------------|-------------------------------------------------|
+| `SELECT * FROM clientes`    | `db.clientes.find()`                           |
+| `SELECT nome FROM clientes` | `db.clientes.find({}, { nome: 1, _id: 0 })`     |
+| `SELECT * WHERE idade > 30` | `db.clientes.find({ idade: { $gt: 30 } })`     |
+| `INSERT INTO clientes (...)`| `db.clientes.insertOne({ nome: "Ana", idade: 25 })` |
+| `UPDATE clientes SET idade=26 WHERE nome="Ana"` | `db.clientes.updateOne({ nome: "Ana" }, { $set: { idade: 26 } })` |
+| `DELETE FROM clientes WHERE nome="Ana"` | `db.clientes.deleteOne({ nome: "Ana" })` |
